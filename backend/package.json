@@ -1,0 +1,15 @@
+{
+  "name": "streak-it-backend",
+  "version": "1.0.0",
+  "description": "Streak it backend",
+  "license": "ISC",
+  "author": "vishal r",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -26,16 +26,13 @@ function App() {
     );
   };
   return (
-    <div className="">
+    <div className="flex flex-col gap-4 p-4 items-center justify-center h-screen bg-zinc-900 text-zinc-300">
       <InputWithButton setInputText={setNewHabit} />
       <div className="flex gap-2">
         {listOfHabits.map((habit, index) =>
           habit ? (
             <div key={index} onClick={() => habitToggle(index)}>
-              <HabitCard
-                habitTitle={habit.habitTitle}
-                isDoneToday={habit.isDoneToday}
-              />
+              <HabitCard habitTitle={habit.habitTitle} />
             </div>
           ) : null,
         )}
